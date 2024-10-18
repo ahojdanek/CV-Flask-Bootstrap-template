@@ -7,3 +7,14 @@ app = Flask(__name__)
 
 #Registrace blueprintu - takto o něm bude Flask vědět
 app.register_blueprint(general_bp)
+
+from products.products import products_bp
+
+app.register_blueprint(products_bp)
+
+
+
+ 
+
+
+
